@@ -24,3 +24,9 @@ SELECT id, make, model, price, ROUND(price* .10 , 2), ROUND(price - (price * .10
 # Alias
 - overwriting any column
 SELECT id, make, model, price AS original_price, ROUND(price* .10 , 2) AS ten_percent, ROUND(price - (price * .10)) AS discount_after_ten_percent FROM car;
+
+# Coalesce
+- for null column if you want to have a default value
+SELECT COALESCE(1);
+SELECT COALESCE(null, 1);
+SELECT COALESCE (email, '') FROM person;
