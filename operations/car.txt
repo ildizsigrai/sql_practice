@@ -15,3 +15,12 @@ SELECT 10 + 2;
 SELECT 10 - 2;
 SELECT 10^2;
 
+calculating discounted price:
+SELECT id, make, model, price, ROUND(price* .10 , 2) FROM car;
+
+10%
+SELECT id, make, model, price, ROUND(price* .10 , 2), ROUND(price - (price * .10), 2) FROM car;
+
+# Alias
+- overwriting any column
+SELECT id, make, model, price AS original_price, ROUND(price* .10 , 2) AS ten_percent, ROUND(price - (price * .10)) AS discount_after_ten_percent FROM car;
