@@ -1,0 +1,8 @@
+SELECT SUM(price) FROM car;
+
+MIN
+MAX
+AVG
+SUM
+
+SELECT make, SUM(price) FROM car GROUP BY MAKE;
