@@ -16,3 +16,7 @@ DELETE FROM person WHERE id = 1;
 # Delete Records
 DELETE FROM person WHERE id = 3;
 DELETE FROM person WHERE gender = 'Male;
+
+# Update
+UPDATE person SET email = 'xxx@xxx.com' WHERE id=3;
+UPDATE person SET first_name = 'XXX', last_name='X' WHERE id=3;
