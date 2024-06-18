@@ -1,3 +1,5 @@
+# Calculating operations
+
 SELECT SUM(price) FROM car;
 
 MIN
@@ -6,3 +8,10 @@ AVG
 SUM
 
 SELECT make, SUM(price) FROM car GROUP BY MAKE;
+
+# Arithmetic Operators (ROUND)
+
+SELECT 10 + 2;
+SELECT 10 - 2;
+SELECT 10^2;
+
