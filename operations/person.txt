@@ -1,0 +1,18 @@
+
+# age function
+
+SELECT first_name, last_name, gender, country_of_birth, date_of_birth, AGE(NOW(), date_of_birth) AS age FROM person;
+
+# Primary keys
+- disinguish between 2 similar data
+
+ALTER TABLE person ADD PRIMARY KEY (id);
+
+ERROR:  could not create unique index "person_pkey"
+DETAIL:  Key (id)=(1) is duplicated.
+
+DELETE FROM person WHERE id = 1;
+
+# Delete Records
+DELETE FROM person WHERE id = 3;
+DELETE FROM person WHERE gender = 'Male;
